@@ -1,0 +1,164 @@
+:root {
+  font-size: 62.5%;
+
+  --color-blue: #1D4ED8;
+  --color-gray: #E5E7EB;
+  --color-green: #4E6D48;
+  --color-red: #B91C1C;
+  --color-background: #F9FAFB;
+  --color-label: #1F2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: var(--color-label);
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button,
+fieldset {
+  border: none;
+  background-color: transparent;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  background-color: var(--color-background);
+}
+
+.container .hero {
+  height: 100%;
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  background: url('../assets/odin-project-unsplash.webp') no-repeat center center;
+  background-size: cover;
+}
+
+.container .hero .logo {
+  height: 15rem;
+  width: 100%;
+  margin-top: 35%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container main {
+  width: 100%;
+}
+
+.container main .headline {
+  padding: 4rem;
+  margin-top: 8rem;
+}
+
+.container main .headline p {
+  font-size: 2.4rem;
+
+  margin-bottom: 4rem;
+}
+
+.container main .headline strong {
+  font-size: 2.4rem;
+}
+
+.container main form {
+  width: 100%;
+  background-color: white;
+}
+
+.container main form h1 {
+  font-size: 3.2rem;
+  padding-inline: 4rem;
+}
+
+.container main form .inputs {
+  width: 100%;
+  padding: 2.4rem 4rem 4rem 4rem;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.5);
+
+  margin-bottom: 3.2rem;
+}
+
+.container main .inputs fieldset {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.input-wrapper {
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+}
+
+.input-wrapper label {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.input-wrapper input {
+  height: 3.2rem;
+  width: 100%;
+  padding-inline: 1.2rem;
+
+
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+  outline: transparent;
+}
+
+
+.input-wrapper input:focus {
+  outline: 1px solid var(--color-blue);
+}
+
+.input-wrapper input.error {
+  outline: 1px solid var(--color-red);
+}
+
+.container main .form-controls {
+  padding-inline: 4rem;
+}
+
+.container main .form-controls button {
+  height: 5rem;
+  width: 23.5rem;
+  margin-bottom: 3.6rem;
+  display: block;
+
+  background-color: var(--color-green);
+  color: white;
+  font-weight: 700;
+
+  cursor: pointer;
+  outline: transparent;
+
+  border-radius: 8px;
+}

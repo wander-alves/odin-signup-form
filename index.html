@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/main.js" type='module'></script>
+  <title>Odin Project - Sign-up Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="logo">
+        <img src="./assets/odin-logo.png">
+      </div>
+    </div>
+
+    <main>
+      <div class="headline">
+        <p>
+          This is not a real online service! You know you need something <br/>
+          like this in your life to help you realize your deepest dreams. <br />
+          Sign up now to get started.
+        </p>
+        <em><strong>You know you want to.</strong></em>
+      </div>
+
+      <form id="signup-form">
+        <h1>Let's do this!</h1>
+        <div class="inputs">
+          <fieldset>
+            <div class="input-wrapper">
+              <label for="first-name">First Name</label>
+              <input 
+                id="first-name"
+                type="text" 
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="last-name">Last Name</label>
+              <input 
+                id="last-name"
+                type="text" 
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input 
+                id="email"
+                type="email" 
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Phone Number</label>
+              <input 
+                id="phone"
+                pattern="\d{11}"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="password">Password</label>
+              <input 
+                id="password"
+                type="password" 
+                minlength="8"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="confirm-password">Confirm Password</label>
+              <input 
+                id="confirm-password"
+                type="password" 
+                minlength="8"
+                required
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-controls">
+          <button type="submit" id="send">Create Account</button>
+          <a href="#">Already have an account? Login.</a>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
