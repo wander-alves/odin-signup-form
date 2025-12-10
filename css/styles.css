@@ -40,6 +40,7 @@ body {
 
 .container {
   min-height: 100%;
+  min-width: 100%;
   display: flex;
   background-color: var(--color-background);
 }
@@ -104,6 +105,7 @@ body {
 
 .container main .inputs fieldset {
   width: 100%;
+  max-width: 94rem;
 
   display: flex;
   flex-wrap: wrap;
@@ -145,6 +147,7 @@ body {
 
 .container main .form-controls {
   padding-inline: 4rem;
+  padding-bottom: 8rem;
 }
 
 .container main .form-controls button {
@@ -161,4 +164,7 @@ body {
   outline: transparent;
 
   border-radius: 8px;
+}
+.container main .form-controls a:hover {
+  font-weight: 600;
 }

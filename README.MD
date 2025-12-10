@@ -3,14 +3,15 @@
 ## About
 This repository was created to achieve the Odin's Project challenge, where we are going to develop a signup form page  based on requirements of module.
 
-...
+---
 
 ## Technologies
 
 - HTML
 - CSS
 - JavaScript
-...
+
+---
 
 ## Layout
 
